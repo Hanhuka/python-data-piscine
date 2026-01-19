@@ -1,0 +1,1 @@
+This is a simple package. It simply prints "AZEITE" on the terminal until exhaustion
