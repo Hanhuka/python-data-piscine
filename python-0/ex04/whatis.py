@@ -17,7 +17,8 @@ def whatis(argv: any):
         else:
             print("I'n Even.")
     except ValueError as error:
-        print("AssertionError:", error)
+        print("AssertionError: You must input an int\n", end="")
+        print(error)
 
 
 whatis(sys.argv)

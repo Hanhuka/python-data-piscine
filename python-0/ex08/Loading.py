@@ -31,10 +31,11 @@ def ft_tqdm(lst: range) -> None:
         bar_size = term_size - decrease
         print_percentage = (" " * (3 - len(str(percentage)))) + \
             str(percentage) + "%|"
-        print_amount = "| " + (" " * (len(str(size)) - len(str(i))))
+        print_amount = "| " + (" " * (len(str(size)) - len(str(i)))) \
         + str(i) + "/" + str(size)
+        bar = print_percentage + _progress_bar(percentage, bar_size) + print_amount, "\r"
         print(print_percentage + _progress_bar(percentage, bar_size)
               + print_amount, "\r", end='')
         i += 1
-        sleep(0.005)
+        yield bar
     return lst

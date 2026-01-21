@@ -20,7 +20,7 @@ def main():
         assert len(sys.argv) == 2, "Wrong number of arguments broski 🥀"
         for c in sys.argv[1]:
             assert c.upper() in NESTED_MORSE, \
-                "AssertionError: Invalid character"
+                "AssertionError: Invalid character: " + c
         for c in sys.argv[1]:
             print(NESTED_MORSE[c.upper()], end=" ")
         print("")
