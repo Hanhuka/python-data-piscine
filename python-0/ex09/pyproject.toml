@@ -3,12 +3,12 @@ requires = ["hatchling >= 1.26"]
 build-backend = "hatchling.build"
 
 [project]
-name = "example_package_YOUR_USERNAME_HERE"
+name = "ft_package"
 version = "0.0.1"
 authors = [
   { name="ralves-g", email="ralves-g@student.42lisboa.com" },
 ]
-description = "A small example package"
+description = "An olive oil package"
 readme = "README.md"
 requires-python = ">=3.9"
 classifiers = [
@@ -18,6 +18,8 @@ classifiers = [
 license = "MIT"
 license-files = ["LICEN[CS]E*"]
 
+[tool.hatch.build.targets.wheel]
+packages = ["src/ft_package"]
+
 [project.urls]
-Homepage = "https://github.com/Hanhuka/pythonPiscine"
-Issues = ""
+Homepage = "https://github.com/Hanhuka/python-data-piscine"	

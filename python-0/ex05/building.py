@@ -15,7 +15,8 @@ def main():
         text = sys.argv[1]
     print(sum(1 for c in text if c.isupper()), " upper letters")
     print(sum(1 for c in text if c.islower()), " lower letters")
-    print(sum(1 for c in text if not (c.isalnum() or c.isspace() or c.isspace())),
+    print(sum(1 for c in text if not (c.isalnum() or c.isspace()
+          or c.isspace())),
           " punctuation")
     print(sum(1 for c in text if c == ' '), " space")
     print(sum(1 for c in text if c.isdigit()), "digits")
